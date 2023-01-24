@@ -1,0 +1,53 @@
+.form-input label {
+  display: none;
+}
+
+.form-input span {
+  display: block;
+  visibility: hidden;
+  font-size: 11px;
+  color: var(--red-invalid);
+  letter-spacing: -0.0846154px;
+}
+
+.form-input span {
+  padding-inline-start: 1rem;
+}
+
+.form-input input {
+  padding: 0 0 1rem 1rem;
+  width: 100%;
+  border: none;
+  background: inherit;
+  border-bottom: 1px solid var(--blue-05);
+  margin-top: 1rem;
+  color: var(--blue);
+}
+
+.form-input input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--blue);
+}
+
+.form-input input::placeholder {
+  position: relative;
+  text-transform: capitalize;
+  font-size: 15px;
+  color: var(--blue-05);
+}
+
+input:invalid[focused='true'] ~ span {
+  visibility: visible;
+}
+
+input:invalid[focused='true']::placeholder {
+  color: var(--red-invalid);
+}
+
+input:invalid[focused='true'] {
+  border-bottom: 1px solid var(--red-invalid);
+}
+
+input[type='textarea'] {
+  height: 130px;
+}

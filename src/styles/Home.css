@@ -1,0 +1,29 @@
+#home {
+  overflow: hidden;
+  position: relative;
+}
+
+#hero::after {
+  content: url('../assets/shared/bg/bg-light.svg');
+  position: absolute;
+  width: 170%;
+  right: -35%;
+  bottom: 72%;
+  z-index: -1;
+}
+
+@media (min-width: 40em) {
+  #hero::after {
+    width: 120%;
+    right: -10%;
+    bottom: 72%;
+  }
+}
+
+@media (min-width: 75em) {
+  #hero::after {
+    width: 70%;
+    left: 57%;
+    bottom: 25%;
+  }
+}

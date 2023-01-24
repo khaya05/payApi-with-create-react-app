@@ -1,0 +1,36 @@
+.simple-ui-figure {
+  width: 87.466%;
+  margin-inline: auto;
+  margin-bottom: 48px;
+}
+
+@media (min-width: 40em) {
+  .simple-ui-figure {
+    width: 63.35%;
+  }
+}
+
+@media (min-width: 75em) {
+  #simple-ui .section__container {
+    flex-direction: row-reverse;
+  }
+
+  .simple-ui-figure-container {
+    width: 566px;
+    height: 500px;
+  }
+
+  .simple-ui-section-container {
+    position: relative;
+    z-index: 20;
+  }
+
+  .simple-ui-section-container::after {
+    content: url('../assets/shared/bg/bg-light.svg');
+    position: absolute;
+    width: 780px;
+    bottom: -20%;
+    right: -50%;
+    z-index: -1;
+  }
+}

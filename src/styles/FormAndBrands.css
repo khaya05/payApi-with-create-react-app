@@ -1,0 +1,70 @@
+.contact-page {
+  padding-inline: 6.23%;
+}
+
+.contact-page .pages-heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8%;
+  line-height: 56px;
+  line-height: 36px;
+  width: 100%;
+  padding-inline: 5%;
+}
+
+@media (min-width: 40em) {
+  .contact-page {
+    padding-inline: 21%;
+  }
+  
+  .contact-page .pages-heading {
+    margin-inline: auto;
+    line-height: 56px;
+  }
+}
+
+.contact__cta {
+  text-align: center;
+  color: var(--blue-075);
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'DM Serif Display';
+  margin-top: 80px;
+  margin-bottom: 2rem;
+}
+
+.contact__companies .brand-icon path {
+  fill: var(--blue);
+}
+
+@media (min-width: 75em) {
+  .form-and-brands-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0  auto 93px;
+    max-width: 1110px;
+    gap: 11%;
+  }
+
+  .contact-page .pages-heading {
+    padding-inline: 0;
+    margin-inline-start: 0;
+      width: 65%;
+  }
+
+  .contact-page {
+    padding: 0;
+  }
+
+  .form__container {
+    max-width: 445px;
+  }
+
+  .brands__container {
+    max-width: 541px;
+  }
+
+  .contact__cta {
+    text-align: start;
+  }
+}

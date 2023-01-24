@@ -1,0 +1,121 @@
+footer {
+  margin-top: 80px;
+  background: var(--dark-blue);
+  padding-block: 41px;
+  overflow: hidden;
+}
+
+.socials,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__logo-container path,
+.social-icon path {
+  fill: var(--very-light-gray);
+}
+
+.footer__nav-links li a {
+  color: var(--very-light-gray-07);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.footer__nav-links li a:hover {
+  color: var(--very-light-gray);
+}
+
+.footer__nav-links {
+  margin-block: 40px;
+}
+
+.footer__nav-links li {
+  margin-bottom: 31px;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+.socials {
+  gap: 20%;
+}
+
+.social-icon:hover path {
+  cursor: pointer;
+  fill: var(--pink-hover);
+}
+
+.footer__container {
+  position: relative;
+  z-index: 2;
+}
+
+.footer__container::before {
+  content: url('../assets/shared/bg/bg-dark.svg');
+  position: absolute;
+  top: 50%;
+  left: -150%;
+  width: 400%;
+  z-index: -1;
+}
+
+@media (min-width: 40em) {
+  .footer__container::before {
+    width: 70%;
+    left: 53%;
+    top: -400%;
+  }
+}
+@media (min-width: 75em) {
+  .footer__container::before {
+    width: 70%;
+    left: 77%;
+    top: -400%;
+  }
+}
+
+@media (min-width: 40em) {
+  .footer__container,
+  .footer__nav-links,
+  .footer__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__container {
+    width: 89.7%;
+    height: 38px;
+  }
+
+  .footer__logo-container {
+    margin-right: 64px;
+  }
+
+  .footer__nav-links li {
+    margin-bottom: 0;
+  }
+
+  .footer__nav-links {
+    gap: 40px;
+  }
+
+  .footer__container {
+    gap: 20%;
+  }
+
+  .socials {
+    width: 120px;
+  }
+}
+
+@media (min-width: 75em) {
+  .footer__container {
+    max-width: 1111px;
+  }
+}

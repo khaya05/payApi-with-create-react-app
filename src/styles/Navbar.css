@@ -1,0 +1,151 @@
+nav {
+  margin: 40px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Public Sans';
+  position: relative;
+  z-index: 2000;
+  padding: 0;
+}
+
+@media (min-width: 40em) {
+  nav {
+    margin: 40px auto 48px;
+    max-width: 1110px;
+    margin: 6.23%;
+  }
+
+  nav ul li a:hover {
+    color: var(--blue-075);
+  }
+}
+
+.nav-links-and-mobile-close-btn-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  /* z-index: 1; */
+  transform: translateX(400%);
+  transition: all 400ms;
+}
+
+.menu-icon-container {
+  color: var(--light-blue);
+}
+
+.show-menu {
+  background: inherit;
+  border: none;
+  display: grid;
+  place-items: center;
+}
+
+nav button span {
+  display: none;
+}
+
+.show-links {
+  padding: 48px 24px;
+  width: 80%;
+  background-color: var(--dark-blue);
+  transform: translateX(0%);
+}
+
+.hide-menu {
+  background-color: inherit;
+  border: none;
+  position: relative;
+  right: -93.7%;
+  margin-bottom: 24px;
+}
+
+nav ul li:not(:first-child),
+.nav__demo-btn-container {
+  margin-top: 32px;
+}
+
+nav ul {
+  padding-top: 43px;
+  border-top: 1px solid var(--very-light-gray-15);
+}
+
+nav ul li,
+.nav__demo-btn-container {
+  text-align: center;
+  list-style: none;
+}
+
+nav ul li a {
+  color: var(--very-light-gray-07);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+nav {
+  z-index: 1000000000;
+}
+
+@media (min-width: 40em) {
+  nav,
+  .show-menu,
+  .nav-links-and-mobile-close-btn-container {
+    position: relative;
+    z-index: 100;
+  }
+
+  .show-menu,
+  .hide-menu {
+    display: none;
+  }
+
+  .nav-links-and-mobile-close-btn-container {
+    transform: none;
+    transition: none;
+    position: static;
+    height: 100%;
+    width: 100%;
+    margin-left: 65px;
+    background-color: inherit;
+  }
+
+  nav ul {
+    border: none;
+  }
+
+  nav ul,
+  .nav-links-and-mobile-close-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav ul li:not(:first-child),
+  .nav__demo-btn-container {
+    margin: 0;
+    margin-left: 40px;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+    color: var(--blue);
+  }
+
+  .logo {
+    margin-right: 64px;
+  }
+
+  .nav__demo-btn-container {
+    width: 173px;
+  }
+}
+
+@media (min-width: 75em) {
+  nav {
+    padding-inline: 0;
+  }
+}

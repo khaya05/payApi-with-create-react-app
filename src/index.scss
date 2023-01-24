@@ -1,0 +1,268 @@
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*  GENERAL STYLES */
+
+:root {
+  --pink: hsla(337, 48%, 49%, 1);
+  --pink-hover: hsla(337, 59%, 64%, 1);
+  --dark-blue: hsla(207, 28%, 15%, 1);
+  --blue: hsla(207, 33%, 32%, 1);
+  --blue-025: hsla(207, 33%, 32%, 0.25);
+  --blue-05: hsla(207, 33%, 32%, 0.5);
+  --blue-075: hsla(207, 33%, 32%, 0.75);
+  --light-blue: hsla(207, 16%, 50%, 1);
+  --very-light-gray-15: hsla(207, 58%, 99%, 0.15);
+  --very-light-gray-07: hsla(207, 58%, 99%, 0.7);
+  --very-light-gray: hsla(207, 58%, 99%, 1);
+  --red-invalid: hsla(0, 100%, 50%, 0.7);
+
+  --bg-color: rgb(237, 243, 248);
+}
+
+body {
+  font-family: 'Public Sans';
+  background: var(--bg-color);
+  overflow-x: hidden;
+  max-width: 1440px;
+  /* border: 1px solid green; */
+  overflow-x: hidden;
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'DM Serif Display', serif;
+  color: var(--blue);
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  font-size: 2rem;
+}
+
+@media (min-width: 40em) {
+  h1,
+  h2 {
+    font-size: 48px;
+  }
+}
+@media (min-width: 75em) {
+  h1 {
+    font-size: 72px;
+  }
+}
+
+/* about sections */
+.pages-heading,
+.about-section_ {
+  padding-inline: 6.23%;
+  margin-top: 48px;
+  margin-inline: auto;
+}
+
+.about-section_ {
+  text-align: center;
+}
+
+.about-section_ h3 {
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.about-section_ p {
+  font-size: 15px;
+  line-height: 28px;
+  color: var(--light-blue);
+}
+
+/* pages-heading */
+.pages-heading {
+  text-align: center;
+  line-height: 36px;
+}
+
+@media (min-width: 40em) {
+  .about-section_ {
+    max-width: 1110px;
+  }
+  .about-section_ {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .about-section_ p {
+    text-align: start;
+    width: 66%;
+  }
+
+  .pages-heading {
+    line-height: 56px;
+  }
+}
+
+@media (min-width: 75em) {
+  .pages-heading {
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    line-height: 56px;
+    font-size: 56px;
+    margin-top: 82px;
+    width: 47%;
+    margin-bottom: 42px;
+  }
+
+  .about-section_ {
+    padding: 0;
+  }
+}
+.pages-heading {
+  position: relative;
+}
+#about,
+#pricing,
+#contact {
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#about::before,
+#pricing::before,
+#contact::before {
+  content: url('./assets/shared/bg/bg-light.svg');
+  position: absolute;
+  top: -50%;
+  right: -100%;
+  width: 170%;
+  z-index: -1;
+}
+
+#pricing::before,
+#about::before {
+  top: -30%;
+}
+
+@media (min-width: 40em) {
+  #about::before,
+  #pricing::before,
+  #contact::before {
+    width: 140%;
+    right: -100%;
+    top: -50%;
+  }
+
+  #pricing::before {
+    top: -84.3%;
+  }
+
+  #contact::before {
+    top: -58.7%;
+  }
+}
+@media (min-width: 75em) {
+  #about::before,
+  #pricing::before,
+  #contact::before {
+    width: 65%;
+    right: -10%;
+    top: -60%;
+  }
+
+  #pricing::before {
+    top: -62.5%;
+  }
+
+  #about::before {
+    right: -10%;
+    top: -42.45%;
+  }
+}
+
+.the-people {
+  margin-bottom: 2rem;
+}
+
+.heading-container {
+  max-width: 1110px;
+  margin-inline: auto;
+}
+
+.show-section{
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+.hide-section {
+  opacity: 0;
+  transform: translateY(8rem);
+}

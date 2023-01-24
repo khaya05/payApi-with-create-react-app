@@ -1,0 +1,85 @@
+header {
+  padding: 0 24px;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-container h1 {
+  text-align: center;
+  /* width: 19ch; */
+  margin-bottom: 24px;
+}
+
+header p {
+  text-align: center;
+  font-size: 15px;
+  color: var(--light-blue);
+  margin-top: 24px;
+}
+
+header p a {
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+}
+
+header figure {
+  padding: 0;
+  margin: 0 auto 24px;
+  width: 51.8%;
+  display: grid;
+  place-items: center;
+  border-radius: 10%;
+}
+
+.hero-container h1 {
+  line-height: 36px;
+}
+
+@media (min-width: 40em) {
+  header figure {
+    width: 26%;
+    margin-bottom: 48px;
+  }
+
+  .hero-container h1 {
+    line-height: 56px;
+  }
+}
+
+@media (min-width: 75em) {
+  header {
+    margin-top: 74px;
+  }
+  .header__container {
+    max-width: 1111px;
+    margin-inline: auto;
+    flex-direction: row-reverse;
+    gap: 20%;
+  }
+
+  header figure {
+    max-width: 263px;
+  }
+
+  .header__main-container {
+    max-width: 546px;
+  }
+  .hero-container h1 {
+    text-align: start;
+    line-height: 72px;
+  }
+
+  .header__main-container p {
+    text-align: start;
+    margin-left: 3%;
+  }
+}

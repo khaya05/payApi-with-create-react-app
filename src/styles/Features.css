@@ -1,0 +1,22 @@
+.Features__features-container {
+  width: 87% !important;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.Features__features-container h2 {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 75em) {
+  .Features__features-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+  }
+
+  .Features__features-container h2 {
+    margin: 0;
+  }
+}

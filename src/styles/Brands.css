@@ -1,0 +1,134 @@
+#brands {
+  background: var(--dark-blue);
+  color: white;
+  text-align: center;
+  padding: 80px 24px;
+  position: relative;
+  overflow: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#brands::before {
+  content: url('../assets/shared/bg/bg-dark.svg');
+  position: absolute;
+  bottom: 67%;
+  left: -50%;
+  z-index: 0;
+  width: 200%;
+}
+
+@media (min-width: 40em) {
+  #brands::before {
+    bottom: 60%;
+    left: calc(-5%);
+    width: 109%;
+  }
+}
+
+@media (min-width: 75em) {
+  #brands::before {
+    bottom: 8%;
+    left: calc(-30%);
+    width: 75%;
+  }
+}
+.brands-section__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column-reverse;
+  position: relative;
+  z-index: 2;
+}
+
+.companies__container {
+  position: relative;
+  z-index: 2;
+}
+
+.companies__container .brand-icon path {
+  fill: var(--very-light-gray);
+}
+
+@media (min-width: 48em) {
+  #brands {
+    padding-block: 88px;
+  }
+}
+
+.brands__left {
+  width: 87.2%;
+}
+
+.brands__left h2 {
+  color: var(--very-light-gray);
+}
+
+.brands__left p {
+  margin: 1rem 0 2rem 0;
+  color: var(--very-light-gray-07);
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.brands__left a {
+  border: 1px solid var(--very-light-gray);
+  text-decoration: none;
+  color: var(--very-light-gray);
+  border-radius: 24px;
+  font-size: 15px;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  transition: all 400ms;
+}
+
+.brands__left a:hover {
+  background-color: var(--very-light-gray);
+  color: var(--dark-blue);
+}
+
+.brands__right {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 39px;
+  margin-bottom: 56px;
+}
+
+.brands__right li {
+  list-style: none;
+}
+
+@media (min-width: 48em) {
+  .brands__right {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .brands__left {
+    width: 60%;
+  }
+}
+
+@media (min-width: 75em) {
+  #brands {
+    padding-block: 100px;
+  }
+
+  .brands-section__container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1110px;
+    margin-inline: auto;
+  }
+
+  .brands__left {
+    max-width: 445px;
+    text-align: start;
+    width: 100%;
+  }
+
+  .brands__right {
+    max-width: 536px;
+  }
+}
