@@ -1,5 +1,3 @@
-// import '../../'
-
 function People() {
   return (
     <section className="about-section_ | the-people">
