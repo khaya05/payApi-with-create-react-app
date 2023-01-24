@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home, About, Pricing, Contact } from './pages';
-import { Navbar, Footer, ReadyToStart, ScrollToTop } from './components';
-
+import { Footer, ReadyToStart, ScrollToTop } from './components';
 
 function App() {
   return (
