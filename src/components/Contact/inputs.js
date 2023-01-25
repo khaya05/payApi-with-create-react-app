@@ -39,8 +39,8 @@ export const inputs = [
   },
   {
     id: nanoid(),
-    name: 'massage',
-    label: 'massage',
+    name: 'message',
+    label: 'message',
     type: 'textarea',
     placeholder: 'message',
     errorMessage: "This field can't be empty",

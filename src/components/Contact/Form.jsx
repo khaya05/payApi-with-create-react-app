@@ -48,6 +48,7 @@ function Form() {
             name="isSubscribed"
             className="checkbox"
             checked={values.isSubscribed}
+            onChange={() => {}}
           />
           <span className="mark" onClick={handleChange}></span>
         </label>
