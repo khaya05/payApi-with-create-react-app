@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <nav>
       <Link to="/">
-        <img src={logo} alt="log" className="logo" />
+        <img src={logo} alt="logo" className="logo" />
       </Link>
 
       <div
@@ -30,12 +30,12 @@ function Navbar() {
           className="hide-menu"
           onClick={() => setShowLinks(false)}
         >
-          <img src={closeIcon} alt="" aria-hidden="true" />
+          <img src={closeIcon} alt="close nav" />
           <span>hide menu</span>
         </button>
 
         {/* nav links */}
-        <ul>
+        <ul aria-label="navigation links">
           {links.map(({ id, name, path }) => (
             <li key={id} onClick={handleLinkClick}>
               <NavLink to={path}>{name}</NavLink>
@@ -54,7 +54,7 @@ function Navbar() {
         className="show-menu"
         onClick={() => setShowLinks(true)}
       >
-        <img src={menuIcon} alt="" aria-hidden="true" />
+        <img src={menuIcon} alt="show nav" />
         <span>show menu</span>
       </button>
     </nav>
