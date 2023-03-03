@@ -3,7 +3,6 @@ import {
   SimpleUI,
   EasyToImplement,
   OtherFeatures,
-  EmailForm,
 } from '../';
 
 import '../../styles/Features.css'
