@@ -13,9 +13,4 @@ describe('EmailForm', () => {
     const label = screen.getByLabelText('email')
     expect(label).toBeInTheDocument()
   })
-  it('renders button', () => {
-    render(<EmailForm />)
-    const button = screen.getByRole('button')
-    expect(button).toBeInTheDocument()
-  })
 })

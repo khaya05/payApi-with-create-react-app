@@ -3,7 +3,7 @@ import '../../styles/ScheduleDemoBtn.css';
 
 function ScheduleDemoBtn() {
   return (
-    <div className="demo" role='button'>
+    <div className="demo">
       <Link to={"/pricing"}>Schedule a Demo</Link>
     </div>
   );
