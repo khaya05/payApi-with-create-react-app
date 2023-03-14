@@ -18,7 +18,7 @@ function Footer() {
             </Link>
           </div>
 
-          <ul className="footer__nav-links" aria-label="navigation links">
+          <ul className="footer__nav-links">
             {links.map(({ id, name, path }) => (
               <li key={id}>
                 <NavLink to={path}>{name}</NavLink>
@@ -27,7 +27,7 @@ function Footer() {
           </ul>
         </div>
 
-        <ul className="socials" aria-label="social media links">
+        <ul className="socials">
           <li className="social-icon">
             <Facebook />
           </li>

@@ -4,11 +4,11 @@ import '../styles/Home.css'
 
 function Home() {
   return (
-    <main id='home'>
+    <div id='home'>
       <Navbar />
       <Hero />
       <Features />
-    </main>
+    </div>
   );
 }
 
